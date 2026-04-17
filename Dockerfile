@@ -41,11 +41,6 @@ COPY --from=client-build /build/client/dist ./client/dist
 # Diretório do banco de dados (monta volume aqui no Coolify)
 RUN mkdir -p ./server/data
 
-# Usuário sem privilégios
-RUN addgroup -S kart && adduser -S kart -G kart \
-    && chown -R kart:kart /app
-USER kart
-
 ENV NODE_ENV=production
 ENV PORT=3001
 
