@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kart Kids Racing 🏎️</title>
+    <!-- Fontes lúdicas do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        /* Paleta de Cores Infantis (Vibrante) */
+        --color-bg: #4A90E2;          /* Fundo principal: Azul céu */
+        --color-primary: #FF5A5F;     /* Vermelho cereja */
+        --color-primary-hover: #FF7B7F;
+        --color-secondary: #00D8A4;   /* Verde água vibrante */
+        --color-secondary-hover: #2EE5B8;
+        --color-warning: #FFCB2B;     /* Amarelo gema */
+        --color-warning-hover: #FFD95A;
+        --color-text-main: #FFFFFF;
+        --color-text-dark: #333333;
+        --color-border: rgba(255, 255, 255, 0.4);
+        --font-kids: 'Fredoka', 'Arial Rounded MT Bold', sans-serif;
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        /* Fundo lúdico gradiente */
+        background: linear-gradient(135deg, var(--color-bg), #8E54E9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        font-family: var(--font-kids);
+      }
+      #game-container {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #2b1d52;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game-container"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

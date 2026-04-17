@@ -1,0 +1,13 @@
+{
+  "name": "kart-kids-racing",
+  "version": "1.0.0",
+  "description": "2D Multiplayer Kids Racing Game",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

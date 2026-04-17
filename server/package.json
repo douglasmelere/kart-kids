@@ -1,0 +1,21 @@
+{
+  "name": "kart-kids-server",
+  "version": "1.0.0",
+  "description": "Racing game backend — Socket.io + Express + SQLite",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5",
+    "sql.js": "^1.14.1",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
